@@ -8,4 +8,4 @@ Contiene:
 
 Ordenados por temas y secuencia puedes ir aṕrendiendo a través de ellos.
 
-[Héctor](https://chocobar.net/wp-content/uploads/avatar_hector_chocobar.png)
+![Héctor](https://chocobar.net/wp-content/uploads/avatar_hector_chocobar.png)
