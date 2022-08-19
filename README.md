@@ -14,10 +14,11 @@ Este repositorio contiene el código del curso **Principios de Programación con
 
 1. Hola Mundo
 2. Introducción
+   - Asignación de valores, variables
    - Comentarios
    - Operadores
-   - Salida de datos
-   - Ingreso de datos
+   - Salida de datos, ```print() ```
+   - Ingreso de datos, ```input()```
    - Funciones integradas
 3. Condicionales
    - Estructura if-elif-else
