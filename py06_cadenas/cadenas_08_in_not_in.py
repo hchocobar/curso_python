@@ -3,7 +3,7 @@ alfabeto = "abcdefghijklmnñopqrstuvwxyz"
 print("f" in alfabeto, end=' ')
 print("F" in alfabeto, end=' ')
 print("1" in alfabeto, end=' ')
-print("ghi" in alfabeto, end=' ')
+print("ghij" in alfabeto, end=' ')
 print("Xyz" in alfabeto, end=' ')
 
 print()

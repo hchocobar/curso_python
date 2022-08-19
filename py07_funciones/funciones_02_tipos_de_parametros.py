@@ -6,13 +6,15 @@ def my_function(a, b, c=1):
 
 
 my_function(5, 2)  # salida: 3
-my_function(2, 5, 3)  # salida: -6
-
-
+my_function(2, 5, 3)  # salida: 0.3333
+# 
+# 
 my_function(a=5, b=2, c=4)  # salida: 3
-my_function(a=5, b=2, c=4)  # salida: 3
-
-
+my_function(a=5, b=2)  # salida: 3
+# 
+# 
 my_function(5, b=2, c=4)  # salida: 3
 my_function(5, b=2, c=7)  # salida: 3
-
+# 
+print('algo', end=" - ")
+print('otro algo')

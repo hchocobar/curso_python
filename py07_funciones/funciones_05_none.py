@@ -18,8 +18,8 @@ print(my_function(3, 4))  # salida: None
 def strange_function(n):
     if n % 2 == 0:
         return "número par"
-    # else:  ## si no agregamos este bloque, en caso de n impar, la función retorna None
-    #    return "numero impar"
+    # else:  # si no agregamos este bloque, en caso de n impar, la función retorna None
+    #     return "numero impar"
 
 
 print(strange_function(18))  # Salida: True

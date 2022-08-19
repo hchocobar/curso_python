@@ -1,4 +1,5 @@
-"""LABORATORIO
+"""
+LABORATORIO
 
 Tiempo Estimado
 5 minutos
@@ -14,8 +15,8 @@ Objetivos
 
 Escenario
 
-El código en el editor contiene comentarios. Intenta mejorarlo: agrega o quita comentarios donde consideres que sea
-apropiado (en ocasiones el remover un comentario lo hace mas legible), además, cambia el nombre de las variables
+El código en el editor contiene comentarios. Intenta mejorarlo: agrega o borra comentarios donde consideres que sea
+apropiado (en ocasiones el remover un comentario lo hace más legible), además, cambia el nombre de las variables
 donde consideres que esto mejorará la comprensión del código.
 
 NOTA
@@ -30,30 +31,30 @@ Es bueno utilizar nombres de variables legibles, y en ocasiones es mejor dividir
 ejemplo en funciones). En algunas situaciones, es una buena idea escribir los pasos de como se realizaron los
 cálculos de una forma sencilla y clara.
 
-Una cosa mas: puede ocurrir que un comentario contenga una pieza de información incorrecta o errónea, nunca se debe
+Una cosa más: puede ocurrir que un comentario contenga una pieza de información incorrecta o errónea, nunca se debe
 de hacer eso a propósito.
 
 Código propuesto:
-#este programa calcula los segundos en cierto número de horas determinadas
+# este programa calcula los segundos en cierto número de horas determinadas
 # este programa fue escrito hace dos días
 
-a = 2 # numero de horas
-segundos = 3600 # número de segundos en una hora
+a = 2 # número de horas
+segundos_hora = 3600 # número de segundos en una hora
 
-print("Horas: ", a) #imprime el numero de horas
-# print("Segundos en horas: ", a * segundos) # se imprime el numero de segundos en determinado numero de horas
+print("Horas:", a)  #imprime el número de horas
+# print("Segundos en horas:", a * segundos_hora) # se imprime el número de segundos en determinado número de horas
 
-#aquí también se debe de imprimir un "Adiós", pero el programador no tuvo tiempo de escribirlo
-#este el es fin del programa que calcula el numero de segundos en 2 horas
+# aquí también se debe de imprimir un "Adiós", pero el programador no tuvo tiempo de escribirlo
+# este es el fin del programa que calcula el número de segundos en 2 horas
 """
 # este programa calcula los segundos en cierto número de horas determinadas
 # este programa fue escrito hace dos días
 
-a = 2  # numero de horas
-segundos = 3600  # número de segundos en una hora
+horas = 2  # numero de horas
+segundos_hora = 3600  # número de segundos en una hora
 
-print("Horas: ", a)  # imprime el numero de horas
-print("Segundos en", a, "horas: ", a * segundos)  # se imprime el numero de segundos en determinado numero de horas
+print("Horas:", horas)  # imprime el número de horas
+print("Segundos en", horas, "horas:", horas * segundos_hora)  # imprime la cantidad de segundos en las horas
 
 # aquí también se debe de imprimir un "Adiós", pero el programador no tuvo tiempo de escribirlo
-# este el es fin del programa que calcula el numero de segundos en 2 horas
+# este es el fin del programa que calcula el número de segundos en 2 horas

@@ -21,7 +21,7 @@ print(miDiccionario1)  # salida: {'flower' : 'flor', 'earth' : 'tierra'}
 miDiccionario2.update(miDiccionario1)
 print(miDiccionario2)
 
-# y eliminar el ultimo elemento con el método popitem(), por ejemplo:
+# y eliminar el último elemento con el método popitem(), por ejemplo:
 print()
 miDiccionario1.popitem()
 print(miDiccionario1)  # salida: {'flower' : 'flor'}

@@ -4,12 +4,12 @@ def saludo():
     print("Hola")
 
 
-def hola(nombre2):  # definiendo una función
+def hola(nombre2):  # definiendo una función con un parámetro
     print("Hola,", nombre2)  # cuerpo de la función
     print(dia)
 
 
-def feliz_dia(dia3, nombre3):  # definiendo una función
+def feliz_dia(dia3, nombre3):  # definiendo una función con dos parámetros
     print("Feliz", dia3, nombre3)  # cuerpo de la función
 
 

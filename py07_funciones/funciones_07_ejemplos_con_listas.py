@@ -4,8 +4,9 @@ def hola_a_todos(my_list):
         print("Hola,", nombre)
 
 
-hola_a_todos(["Juan", "Lucía", "Gustavo", "Sofía", "Roberto", "Héctor"])
-
+# hola_a_todos(["Juan", "Lucía", "Gustavo", "Sofía", "Roberto", "Héctor"])
+lista_nombres = ["Juan", "Lucía", "Gustavo", "Sofía", "Roberto", "Héctor"]
+hola_a_todos(lista_nombres)
 
 # Podemos obtener una lista como resultado de función
 def creando_listas(n):
@@ -15,4 +16,4 @@ def creando_listas(n):
     return my_list
 
 
-print(creando_listas(11))
+print(creando_listas(22))

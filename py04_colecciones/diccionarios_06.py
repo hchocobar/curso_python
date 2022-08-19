@@ -5,7 +5,7 @@ miDiccionario = {
     "earth": "tierra",
     "wind": "viento",
 }
-for miClave, miValor in miDiccionario.items():
-    print("Par clave/valor del diccionario ->", miClave, ":", miValor)
+for variable_01, variable_02 in miDiccionario.items():
+    print("Par clave/valor del diccionario ->", variable_01, ":", variable_02)
 
 # Los elementos de la miDiccionario.items() han sido "desempaquetados" en las variables miClave, miValor

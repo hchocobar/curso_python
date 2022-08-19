@@ -19,3 +19,7 @@ print(len(yo_soy))  # salida: 3 - la diagonal invertida (\ escape), no cuenta pa
 multiLinea = '''Línea 1
 Linea 2'''
 print(len(multiLinea))  # salida: 15 - recuerda el \n
+
+# Ejemplo 5
+multiLinea = 'Línea 1\nLinea 2'
+print(len(multiLinea))  # salida: 15 - recuerda el \n

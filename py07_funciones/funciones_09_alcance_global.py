@@ -5,9 +5,9 @@ def my_function():
     print("Valor de la variable var dentro la función antes de la asignación:", var)
     var = 7 * 5
     print("Valor de la variable var dentro la función DESPUÉS de la asignación:", var)
-    var = 8
+    var = 7
 
 
 var = 3
 my_function()
-print("Valor de la variable var fuera de la función:", var)  # ¿Qué valor muestra: 3 o 7 ?
+print("Valor de la variable var fuera de la función:", var)  # ¿Qué valor muestra: 3 o 7?

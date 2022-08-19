@@ -6,4 +6,7 @@ try:
 except:
     print("Hemos producido un error intentando dividir por cero...")
 
+
 print("3")
+
+# x = 1 / 0

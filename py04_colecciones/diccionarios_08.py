@@ -6,11 +6,11 @@ miDiccionario = {
     "earth": "tierra",
     "wind": "viento",
 }
-print(len(miDiccionario))  # salida: 3
+print(len(miDiccionario))  # salida: 4
 print(miDiccionario)
 
 del miDiccionario["fire"]  # elimina un elemento
-print(len(miDiccionario))  # salida: 2
+print(len(miDiccionario))  # salida: 3
 print(miDiccionario)
 
 miDiccionario.clear()  # elimina todos los elementos

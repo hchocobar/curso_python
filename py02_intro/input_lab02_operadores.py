@@ -1,4 +1,5 @@
-"""LABORATORIO 3.1.1.5
+"""
+LABORATORIO 3.1.1.5
 
 Tiempo Estimado
 5 minutos
@@ -18,7 +19,6 @@ n como entrada, que es un entero, e imprime False si n es menor que 100, y True 
 No debes crear ningún bloque if.
 
 Datos de prueba
-Prueba tu código usando los datos que te proporcionamos.
 
 Ejemplo de entrada: 55
 Resultado esperado: False
@@ -40,3 +40,4 @@ Resultado esperado: True
 """
 numbers = int(input("ingrese un número entero: "))
 print(numbers >= 100)
+mi_numero = 4

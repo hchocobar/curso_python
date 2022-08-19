@@ -1,4 +1,4 @@
-""""Laboratorio
+"""Laboratorio
 
 
 Escenario

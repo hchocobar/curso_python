@@ -1,7 +1,7 @@
 # Argumentos posicionales: importa el orden de los parámetros
 # Argumentos con palabras clave: el orden de los argumentos es irrelevante
 # Mix de Argumentos posicionales con palabras clave: siempre los posicionales primero
-def my_function(a, b, c=1):
+def my_function(a, b=0, c=1):
     print(a - int(b) / c)
 
 

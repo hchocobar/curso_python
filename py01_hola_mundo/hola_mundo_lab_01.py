@@ -17,7 +17,7 @@ línea de texto en la pantalla.
 
 En tu primer laboratorio:
 
-1 Utiliza la función print() para imprimir la linea "¡Hola, Mundo!" en la pantalla.
+1 Utiliza la función print() para imprimir la línea "¡Hola, Mundo!" en la pantalla.
 
 2 Una vez hecho esto, utiliza la función print() nuevamente, pero esta vez imprime tu nombre.
 

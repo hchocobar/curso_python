@@ -1,4 +1,4 @@
-numeroMayor = -99999999
+numero_mayor = -99999999
 contador = 0
 
 while True:
@@ -6,10 +6,10 @@ while True:
     if numero == -1:
         break
     contador = 1
-    if numero > numeroMayor:
-        numeroMayor = numero
+    if numero > numero_mayor:
+        numero_mayor = numero
 
 if contador != 0:
-    print("El número más grande es", numeroMayor)
+    print("El número más grande es", numero_mayor)
 else:
     print("No ha ingresado ningún número")

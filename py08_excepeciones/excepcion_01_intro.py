@@ -1,6 +1,6 @@
-import math
+import math as m
 
 x = float(input("Ingrese x: "))  # fallará si ingresamos una cadena
-y = math.sqrt(x)  # fallará si ingresamos un valor negativo
+y = m.sqrt(x)  # fallará si ingresamos un valor negativo
 
 print("La raíz cuadrada de", x, "es:", y)

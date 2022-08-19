@@ -23,7 +23,7 @@ print("Fin ejemplo 3")
 
 try:
     y = 1 / 0
-except BaseException:  # es la excepción mas general, por lo tanto esta instrucción es igual a except:
+except BaseException:  # es la excepción más general, por lo tanto esta instrucción es igual a except:
     print("Ups... excepción base")
 
 print("Fin ejemplo 4")

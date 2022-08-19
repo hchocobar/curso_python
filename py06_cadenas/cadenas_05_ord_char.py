@@ -1,5 +1,5 @@
 # ord () devuelve el valor del punto de código ASCII/UNICODE de un caracter
-ch1 = 'a'
+ch1 = '@'
 ch2 = ' '  # espacio
 
 print(ord(ch1))

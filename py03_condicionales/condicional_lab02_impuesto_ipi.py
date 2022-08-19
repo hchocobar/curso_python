@@ -53,9 +53,10 @@ Resultado esperado: El impuesto es: 0.0 pesos
 
 ingreso = float(input("Ingrese el ingreso anual:"))
 minima = 85528
+num_01 = 556.02
 
 if ingreso <= minima:
-    impuesto = (ingreso * 0.18) - 556.02
+    impuesto = (ingreso * 0.18) - num_01
 else:
     impuesto = 14839.02 + (ingreso - minima) * 0.32
 if impuesto < 0:

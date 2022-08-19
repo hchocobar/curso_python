@@ -30,3 +30,12 @@ falso = False
 variable_sin_nada = None
 
 x = 0x15 + 21
+
+
+print(type(mi_cadena))
+print(type(mi_cadena_larga))
+print(type(edad))
+print(type(numero_grande1))
+print(numero_grande1)
+print(type(numero_octal1))
+print(type(numero_hexadecimal1))

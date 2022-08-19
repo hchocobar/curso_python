@@ -43,5 +43,5 @@ print("""
 """)
 print("Créditos:")
 print("Profesor: 'Héctor Chocobar Torrejón'")
-print("Profesión: Ingeniero en Sistemas de Información")
+print("Profesión: Ingeniero en Sistemas")
 print("Sitio Web: https://chocobar.net")

@@ -12,6 +12,7 @@
 #  - Utilizar la sentencia return.
 #  - Probar las funciones.
 #
+"""
 Escenario
 
 Tu tarea es escribir y probar una función que toma un argumento (un año) y devuelve True si el año es un año
@@ -21,20 +22,21 @@ Parte del esqueleto de la función ya está en el editor.
 
 Nota: también hemos preparado un breve código de prueba, que puedes utilizar para probar tu función.
 
-El código utiliza dos listas: una con los datos de prueba y la otra con los resultados esperados. El código te dirá
+El código usa dos listas: una con los datos de prueba y la otra con los resultados esperados. El código te dirá
 si alguno de tus resultados no es válido.
-def isYearLeap(year):
-#
-# coloca tu código aquí
-#
+"""
+def is_year_leap(year):
+	pass
+	# coloca tu código aquí
 
-testData = [1900, 2000, 2016, 1987]
-testResults = [False, True, True, False]
-for i in range(len(testData)):
-	yr = testData[i]
-	print(yr,"->",end="")
-	result = isYearLeap(yr)
-	if result == testResults[i]:
+
+test_data = [1900, 2000, 2016, 1987]
+test_results = [False, True, True, False]
+for i in range(len(test_data)):
+	yr = test_data[i]
+	print(yr, "->", end="")
+	result = is_year_leap(yr)
+	if result == test_results[i]:
 		print("OK")
 	else:
 		print("Error")

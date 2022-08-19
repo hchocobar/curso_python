@@ -1,9 +1,10 @@
 # min() - devuelve el caracter de menor valor ASCII-UNICODE de la cadena
 print(min("aAbByYzZ"))
+print(ord(min("aAbByYzZ")))
 
 t = '¡Los Caballeros Que Dicen!'
 print('[' + min(t) + ']')  # devuelve un espacio en blanco cuyo valor es 32
-
+print('[' + min(t) + ']')
 
 # max() - devuelve el caracter de mayor valor ASCII-UNICODE de la cadena
 print(max("aAbByYzZ"))
