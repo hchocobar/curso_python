@@ -1,4 +1,4 @@
-# Laboratorio 2.1
+# Laboratorio
 
 **Tiempo Estimado:** 5 minutos
 

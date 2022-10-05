@@ -1,11 +1,22 @@
-hora = int(input("Hora de inicio (horas): "))
-minuto = int(input("Minuto de inicio (minutos): "))
-dura = int(input("Duración del evento (minutos): "))
+# Calcula el horario de finalización de un evento
+hora_inicio = int(input("Hora de inicio (horas): "))
+minuto_inicio = int(input("Minuto de inicio (minutos): "))
+duracion_del_evento = int(input("Duración del evento (minutos): "))
 
 # coloca tu código aquí
-horas_adicionales = (minuto + dura) // 60
-hora_fin = (hora + horas_adicionales) % 24
+horas_adicionales = (minuto_inicio + duracion_del_evento) // 60
+hora_fin = (hora_inicio + horas_adicionales) % 24
 
-minutos_fin = (minuto + dura) % 60
+minutos_fin = (minuto_inicio + duracion_del_evento) % 60
 
-print(hora_fin, ":", minutos_fin)
+print(hora_fin, ":", minutos_fin, sep='')
+
+"""
+Datos de Prueba:
+
+Hora de inicio: 23
+Minuto de inicio: 15
+Duración del evento: 70 
+
+Salida esperada: 0:25
+"""

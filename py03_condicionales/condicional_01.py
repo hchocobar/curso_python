@@ -1,4 +1,4 @@
-# Ejemplo de sentencia condicional if
+# Ejemplo de sentencia condicional 'if'
 numero = int(input('Por favor, ingresa un número: '))  # solicitamos un número
 if numero == 100:
     print("ingresó", numero)  # verdadero

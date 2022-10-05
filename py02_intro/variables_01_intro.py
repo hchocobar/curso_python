@@ -1,6 +1,5 @@
 # Variables numéricas
-ingreso_semana_1 = 5
-ingreso_semanal_2 = 30
+ingreso_semanal = 25
 egreso_semanal = 10
 semanas_anuales = 52
 
@@ -9,4 +8,5 @@ mi_nombre = "Héctor"
 mi_apellido = "Chocobar Torrejón"
 
 # Mostrando los resultados
+print('Ahorro Anual:', (ingreso_semanal - egreso_semanal) * semanas_anuales)
 print("Mi nombre:", mi_nombre, mi_apellido)

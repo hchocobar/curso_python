@@ -31,7 +31,7 @@ variable_sin_nada = None
 
 x = 0x15 + 21
 
-
+# type() función integrada que nos devuelve el tipo de dato que contiene la variable
 print(type(mi_cadena))
 print(type(mi_cadena_larga))
 print(type(edad))

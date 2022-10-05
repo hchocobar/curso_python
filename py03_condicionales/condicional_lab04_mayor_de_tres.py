@@ -1,11 +1,9 @@
-# lee tres números
+# solicitamos tres números
 numero1 = int(input("Ingresa el primer número:"))
 numero2 = int(input("Ingresa el segundo número:"))
 numero3 = int(input("Ingresa el tercer número:"))
 
-# asumimos temporalmente que el primer número
-# es el más grande
-# lo verificaremos pronto
+# asumimos temporalmente que el primer número es el más grande
 mas_grande = numero1
 
 # comprobamos si el segundo número es más grande que el mayor número actual
