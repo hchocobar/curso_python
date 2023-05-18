@@ -4,7 +4,7 @@ mi_cadena_larga = """
 Esta es una cadena
 de varias lineas """
 
-# Número entero
+# Número entero decimal
 edad = 35
 numero_grande1 = 35E4
 numero_grande2 = 35e8
@@ -22,16 +22,14 @@ precio1 = 7435.28
 precio2 = 74.
 porcentaje = .4
 
-# Booleano (verdadero / Falso)
+# Booleano: verdadero / falso
 verdadero = True
 falso = False
 
 # None – NonType – Ausencia de un valor
 variable_sin_nada = None
 
-x = 0x15 + 21
-
-# type() función integrada que nos devuelve el tipo de dato que contiene la variable
+# La función integrada type() nos devuelve el tipo de dato que contiene la variable
 print(type(mi_cadena))
 print(type(mi_cadena_larga))
 print(type(edad))
