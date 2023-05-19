@@ -1,17 +1,13 @@
-# Si deseamos acceder a un elemento del diccionario, se puede hacer haciendo
-mi_diccionario = {
-    "fire": "fuego",
-    "water": "agua",
-    "earth": "tierra",
-    "wind": "viento",
-}
+# Si deseamos acceder a un elemento del diccionario, tenemos dos formas de hacerlo
+mi_diccionario = {'nombre': 'Jane Doe',
+                  'edad': 23,
+                  'curso': 'Curso de Python',
+                  'skills': {'programación': True,
+                             'base_de_datos': False},
+                  'niveles': ['básico', 'intermedio']}
 
+# 1. Referencia a su clave colocándola dentro de corchetes []
+print(mi_diccionario["nombre"])  # Salida: 'Jane Doe'
 
-# 1. referencia a su clave colocándola dentro de corchetes (ejemplo 1)
-elemento1 = miDiccionario["water"]  # haciendo referencia a su clave dentro de corchetes
-print(elemento1)  # salida: agua
-
-
-# 2. utilizando el método get()
-elemento2 = miDiccionario.get("earth")  # utilizando el método get()
-print(elemento2)  # salida: tierra
+# 2. Utilizando el método get()
+print(mi_diccionario.get("curso"))  # Salida: 'Curso de Python'
