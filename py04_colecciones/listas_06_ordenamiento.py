@@ -1,19 +1,20 @@
-miLista = []
-swapped = True
-num = int(input("¿Cuántos elementos deseas ordenar?:"))
+# Ordenamos una lista numérica ingresada desde consola
+mi_lista = []
+intercambiado = True
+cantidad = int(input("¿Cuántos elementos deseas ordenar?:"))
 
-for i in range(num):
-    val = float(input("Introduce un elemento de la lista:"))
-    miLista.append(val)
+for i in range(cantidad):
+    valor = float(input("Introduce un elemento de la lista:"))
+    mi_lista.append(valor)
 
-while swapped:
-    swapped = False
-    for i in range(len(miLista) - 1):
-        if miLista[i] > miLista[i + 1]:
-            swapped = True
-            miLista[i], miLista[i + 1] = miLista[i + 1], miLista[i]
-        print(miLista)
+while intercambiado:
+    intercambiado = False
+    for i in range(len(mi_lista) - 1):
+        if mi_lista[i] > mi_lista[i + 1]:
+            intercambiado = True
+            mi_lista[i], mi_lista[i + 1] = mi_lista[i + 1], mi_lista[i]
+        print(mi_lista)
     print()
 
 print("\nOrdenado:")
-print(miLista)
+print(mi_lista)
