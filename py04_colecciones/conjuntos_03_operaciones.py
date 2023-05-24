@@ -1,20 +1,20 @@
 # Operaciones con conjuntos
-# Debes notar que la salida no siempre se muestran en el mismo orden si ejecutas varias veces el programa
-a = set('abracadabra')
-b = set('alacazam')
+# Notarás que la salida no siempre se muestran en el mismo orden si ejecutas varias veces el programa
+set_a = set('abracadabra')
+set_b = set('alacazam')
 
-# letras únicas en a
-print(a)  # salida: {'r', 'b', 'd', 'c', 'a'}
-print(b)  # salida: {'l', 'a', 'c', 'm', 'z'}
+# Letras únicas en los conjuntos
+print(set_a)  # Salida: {'r', 'b', 'd', 'c', 'a'}
+print(set_b)  # Salida: {'l', 'a', 'c', 'm', 'z'}
 
-# letras únicas en a pero no en b
-print(a - b)  # salida: {'r', 'd', 'b'}
+# Letras únicas en set_a pero no en set_b
+print(set_a - set_b)  # Salida: {'r', 'd', 'b'}
 
-# letras en a o b o en ambas
-print(a | b)  # salida {'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'}
+# letras en set_a o set_b o en ambas
+print(set_a | set_b)  # Salida {'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'}
 
-# letras en a y b
-print(a & b)  # salida: {'a', 'c'}
+# letras en set_a y set_b
+print(set_a & set_b)  # Salida: {'a', 'c'}
 
-# letras en a o b pero no en ambas
-print(a ^ b)  # salida: {'r', 'd', 'b', 'm', 'z', 'l'}
+# letras en set_a o set_b pero no en ambas
+print(set_a ^ set_b)  # Salida: {'r', 'd', 'b', 'm', 'z', 'l'}

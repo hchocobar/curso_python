@@ -7,6 +7,8 @@ semanas_anuales = 52
 mi_nombre = "Héctor"
 mi_apellido = "Chocobar Torrejón"
 
-# Mostrando los resultados
+# Realizamos una operación matemática dentro del print (segundo parámetro) y lo mostramos
 print('Ahorro Anual:', (ingreso_semanal - egreso_semanal) * semanas_anuales)
+
+# Tres parámetros: string, variable de texto, variable de texto.
 print("Mi nombre:", mi_nombre, mi_apellido)

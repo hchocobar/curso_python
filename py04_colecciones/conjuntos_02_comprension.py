@@ -1,7 +1,7 @@
 # Construcción de un conjunto utilizando comprensión
-a = {x for x in 'abracadabra'}  # a, b, r, a, c, d, a, b, r, a
-print(a)  # salida {'r', 'c', 'a', 'b', 'd'}
+set_a = {x for x in 'abracadabra'}  # Valores de x en cada iteración: a, b, r, a, c, d, a, b, r, a
+print(set_a)  # Salida {'r', 'c', 'a', 'b', 'd'}
 
-# otro ejemplo
-a = {x for x in 'abracadabra' if x not in 'abc'}
-print(a)  # salida {'r', 'd'}
+# Otro ejemplo
+set_a = {x for x in 'abracadabra' if x not in 'abc'}
+print(set_a)  # Salida {'r', 'd'}
