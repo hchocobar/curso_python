@@ -1,4 +1,4 @@
 # Se puede crear una tupla vacía de la siguiente manera:
-tup = ()  # defino una tupla vacía
-print(tup)  # salida ()
-print(type(tup))  # salida: <class 'tuple'>
+mi_tupla = ()  # defino una tupla vacía
+print(mi_tupla)  # salida ()
+print(type(mi_tupla))  # salida: <class 'tuple'>
