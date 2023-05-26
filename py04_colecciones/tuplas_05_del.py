@@ -1,7 +1,7 @@
 # Las tuplas son inmutables
 # Sin embargo, se puede eliminar:
-miTupla = 1, 2, 3,
-print(miTupla)
+mi_tupla = 1, 2, 3,
+print(mi_tupla)  # Salida: (1, 2, 3)
 
-del miTupla
-print(miTupla)  # NameError: name 'miTupla' is not defined
+del mi_tupla
+print(mi_tupla)  # NameError: name 'mi_tupla' is not defined

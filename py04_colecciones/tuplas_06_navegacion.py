@@ -1,25 +1,25 @@
 # Ejemplo 1 - navegar a través de los elementos de una tupla con un bucle
-print('ejemplo 1')
-tup1 = (1, 2, 3)
-for elem in tup1:
-    print(elem)  # probar operaciones dentro del print
+print('Ejemplo 1')
+mi_tupla1 = (1, 2, 3)
+for element in mi_tupla1:
+    print(element)  # probar operaciones dentro del print
 
-# Ejemplo 2 - verificar si un elemento o no esta presente en la tupla utilizando los operadores in / not in
-print('ejemplo 2')
-tup2 = (1, 2, 3, 4)
-print(5 in tup2)
-print(5 not in tup2)
+# Ejemplo 2 - verificar si un elemento o no está presente en la tupla utilizando los operadores in / not in
+print('Ejemplo 2')
+mi_tupla2 = (1, 2, 3, 4)
+print(5 in mi_tupla2)  # Salida: False
+print(5 not in mi_tupla2)  # Salida: True
 
 # Ejemplo 3 - emplear la función len() para verificar cuantos elementos existen en la tupla
-print('ejemplo 3')
-tup3 = (1, 2, 3, 4, 5, 6)
-print(len(tup3))
+print('Ejemplo 3')
+mi_tupla3 = (1, 2, 3, 4, 5, 6)
+print(len(mi_tupla3))  # Salida: 6
 
 # Ejemplo 4 - incluso unir o multiplicar tuplas
-print('ejemplo 4')
-tup4 = tup1 + tup2
-tup5 = tup3 * 2
-print(tup4)
-print(type(tup4))
-print(tup5)
-print(type(tup5))
+print('Ejemplo 4')
+mi_tupla4 = mi_tupla1 + mi_tupla2
+mi_tupla5 = mi_tupla3 * 2
+print(mi_tupla4)  # Salida: (1, 2, 3, 1, 2, 3, 4)
+print(type(mi_tupla4))  # Salida: <class 'tuple'>
+print(mi_tupla5)  # Salida: (1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6)
+print(type(mi_tupla5))  # Salida: <class 'tuple'>
