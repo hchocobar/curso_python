@@ -1,14 +1,13 @@
-# break - ejemplo
+# Ejemplos: break
+print("La instrucción break (ruptura):")
+for i in range(6):
+    print("Dentro del ciclo - antes del break", i)
+    if i == 3:
+        break
+    print("Dentro del ciclo - después del break", i)
+print("Fuera del ciclo.")
 
-# print("La instrucción de ruptura:")
-# for i in range(6):
-#     print("Dentro del ciclo - antes del break", i)
-#     if i == 3:
-#         break
-#     print("Dentro del ciclo - después del break", i)
-# print("Fuera del ciclo.")
-
-# continua - ejemplo
+# Ejemplo: continue
 print("\nLa instrucción continue:")
 for i in range(1, 6):
     print()
