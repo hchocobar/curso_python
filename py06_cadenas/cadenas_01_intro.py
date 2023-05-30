@@ -1,5 +1,4 @@
-# las cadenas de Python son secuencias inmutables.
-
+# Las cadenas de Python son secuencias inmutables.
 palabra = 'palabra'
 palabra2 = "otra cadena"
 print(palabra)
