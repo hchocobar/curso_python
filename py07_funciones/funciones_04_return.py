@@ -4,5 +4,5 @@ def multiply(a, b=1):
     return a * b
 
 
-print(multiply(b=4, a=5))  # salida: 20
-print(multiply(5))
+print(multiply(b=4, a=5))  # Salida: 20
+print(multiply(5))  # Salida: 5
