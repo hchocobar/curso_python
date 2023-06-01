@@ -8,6 +8,7 @@ def hola_a_todos(my_list):
 lista_nombres = ["Juan", "Lucía", "Gustavo", "Sofía", "Roberto", "Héctor"]
 hola_a_todos(lista_nombres)
 
+
 # Podemos obtener una lista como resultado de función
 def creando_listas(n):
     my_list = []
@@ -16,4 +17,4 @@ def creando_listas(n):
     return my_list
 
 
-print(creando_listas(22))
+print(creando_listas(22))  # Salida: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]

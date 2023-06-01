@@ -5,7 +5,7 @@ def deseos():
 
 d = deseos()
 nombre = "Héctor"
-print(d, nombre)  # salida: ¡Feliz Cumpleaños! Héctor
+print(d, nombre)  # Salida: ¡Feliz Cumpleaños! Héctor
 
 
 # Observa la diferencia en la salida de estos dos ejemplos:
