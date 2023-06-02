@@ -5,9 +5,9 @@ Nota: finally debe ser la última rama del código diseñada para manejar las ex
 Nota: else y finally no son dependientes entre sí, y pueden ocurrir de manera independiente. """
 
 
-def mas_sobre_excepciones(n):
+def mas_sobre_excepciones(foo):
     try:
-        n = 1 / n
+        foo = 1 / foo
     except ZeroDivisionError:
         print("División fallida")
         return None
@@ -15,7 +15,7 @@ def mas_sobre_excepciones(n):
         print("Todo salió bien")
     finally:
         print("Finalmente adiós")
-        return n
+        return foo
 
 
 print(mas_sobre_excepciones(2))  # Salida: "Todo salió bien", "Finalmente adiós", 0.5
