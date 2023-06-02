@@ -3,7 +3,7 @@ Por ello, podemos capturar la excepción en un identificador con el fin de anali
 adecuadas.
 Nota: el alcance del identificador solo es dentro del except, y no va más allá. """
 try:
-    i = int("Hola!")
+    foo = int("Hola!")
 except Exception as e:
     print(e)
     print(e.__str__())

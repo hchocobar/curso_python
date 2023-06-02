@@ -1,8 +1,8 @@
 # Variante más avanzada de la instrucción para tratar varias excepciones
 try:
-    x = int(input("Ingresa un numero entero: "))
-    y = 1 / x
-    print(y)
+    foo = int(input("Ingresa un número entero: "))
+    bar = 1 / foo
+    print(bar)
 except ZeroDivisionError:
     print("No puedes dividir entre cero, lo siento.")
 except ValueError:
@@ -10,4 +10,4 @@ except ValueError:
 except:
     print("Ups! algo salio mal...")
 
-print("THE END")
+print("The End")

@@ -1,4 +1,4 @@
-"""Propiedad args
+""" Propiedad args
 
 La clase BaseException introduce una propiedad llamada args que es una tupla diseñada para reunir todos los
 argumentos pasados al constructor de la clase.

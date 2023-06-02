@@ -1,4 +1,5 @@
-"""Podemos definir nuestras propias excepciones como subclases derivadas de las predefinidas."""
+""" Custom Exception
+Podemos definir nuestras propias excepciones como subclases derivadas de las predefinidas."""
 
 
 class PizzaError(Exception):
