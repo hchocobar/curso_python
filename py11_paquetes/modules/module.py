@@ -1,9 +1,4 @@
-# modules.py
-
-#!/usr/bin/env python3
-
 """ modules.py - an example of Python modules """
-
 __counter = 0
 
 

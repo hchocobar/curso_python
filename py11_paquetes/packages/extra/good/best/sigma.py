@@ -1,8 +1,4 @@
-#! /usr/bin/env python3
-
 """ example module: extra.good.best.sigma """
-
-
 def fun_s():
     return "Sigma"
 

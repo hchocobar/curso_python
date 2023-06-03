@@ -1,5 +1,3 @@
-#! /usr/bin/env python3
-
 """ example module: extra.good.best.tau """
 
 
