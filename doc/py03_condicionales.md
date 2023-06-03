@@ -19,7 +19,8 @@ Ejemplo:
 ```python
 # Solicitamos el ingreso de un número
 numero = input('Por favor, ingresa un número: ')
-numero = int(numero)  # convertimos a entero el valor que ingresado
+numero = int(numero)  # Convertimos a entero el valor que ingresado
+
 # Evaluamos el número y mostramos una leyenda de acuerdo a ese valor
 if numero < 100:
     print('Hola')
