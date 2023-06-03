@@ -1,6 +1,6 @@
 # ¿Cuál es la salida del siguiente fragmento de código?
-tup = 1, 2, 3
-a, b, c = tup
+my_tuple = 1, 2, 3
+a, b, c = my_tuple
 print(a * b * c)
 
 # Resultado: El programa imprimirá 6 en pantalla.
