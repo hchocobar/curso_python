@@ -1,20 +1,24 @@
 # Laboratorio 2
 # Tu tarea es escribir y probar una función que toma dos argumentos (un año y un mes) y devuelve el número de días
 # del mes/año dado (mientras que solo febrero es sensible al valor year, tu función debería ser universal).
-# La parte inicial de la función está lista. Ahora, haz que la función devuelva None si los argumentos no tienen sentido.
+# La parte inicial de la función está lista. Ahora, haz que la función devuelva None si los argumentos no son válidos.
 # Por supuesto, puedes (y debes) utilizar la función previamente escrita y probada (Laboratorio 1). Puede ser muy útil.
 # Te recomendamos que utilices una lista con los meses. Puedes crearla dentro de la función; este truco acortará
 # significativamente el código.
 # Hemos preparado un código de prueba. Amplíalo para incluir más casos de prueba.
 def is_year_leap(year):
+    pass
     #
-    # tu código del LAB 01 de funciones
+    # Tu código aquí
     #
 
+
 def days_in_month(year, month):
+    pass
     #
-    # coloca tu código aquí
+    # Coloca tu código aquí
     #
+
 
 test_years = [1900, 2000, 2016, 1987]
 test_months = [2, 2, 1, 11]
@@ -28,5 +32,3 @@ for i in range(len(test_years)):
         print("OK")
     else:
         print("Error")
-
-
