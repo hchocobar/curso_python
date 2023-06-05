@@ -37,5 +37,5 @@ Resultado esperado: `True`
 
 ```python
 numbers = int(input("ingrese un número entero: "))
-# aquí escribe tu linea de código 
+# Aquí escribe tu linea de código 
 ```

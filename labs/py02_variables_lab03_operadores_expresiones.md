@@ -19,7 +19,7 @@ Tu tarea es completar el código para evaluar la siguiente expresión:
 ```markdown
 3x³ - 2x² + 3x - 1
 
-lease: 3 por x al cubo menos 2 por x al cuadrado mas 3 por x menos 1)
+lease: 3 por x al cubo menos 2 por x al cuadrado mas 3 por x menos 1
 ```
 
 El resultado debe ser asignado a `y`.
@@ -49,10 +49,10 @@ no lograrlo en el primer intento.
 **Código propuesto:**
 
 ```python
-# codifica aquí tus datos de prueba.
+# Codifica aquí tus datos de prueba.
 x = float(x)
 
-# escribe tu código aquí.
+# Escribe tu código aquí.
 print("y =", y)
 
 ```

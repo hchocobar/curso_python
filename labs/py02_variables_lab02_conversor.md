@@ -51,8 +51,8 @@ EUR, un convertidor de temperatura, etc.
 km = 12.25
 millas = 7.38
 
-millas_a_km =  # aquí va tu código
-km_a_millas =  # aquí va tu código
+millas_a_km =  # Aquí va tu código
+km_a_millas =  # Aquí va tu código
 
 print(millas, " millas son ", round(millas_a_km, 2), " kilómetros ")
 print(km, " kilómetros son ", round(km_a_millas, 2), " millas ")
