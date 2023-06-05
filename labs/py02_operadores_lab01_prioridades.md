@@ -42,6 +42,6 @@ Entrada de muestra: -5 | Salida esperada: y = -0.19258202567760344
 
 ```python
 x = float(input("Ingresa el valor para X: "))
-# coloca tu código aquí
+# Coloca tu código aquí
 print("y =", y)
 ```

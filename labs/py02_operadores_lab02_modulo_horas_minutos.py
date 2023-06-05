@@ -3,7 +3,7 @@ hora_inicio = int(input("Hora de inicio (horas): "))
 minuto_inicio = int(input("Minuto de inicio (minutos): "))
 duracion_del_evento = int(input("Duración del evento (minutos): "))
 
-# coloca tu código aquí
+# Coloca tu código aquí
 horas_adicionales = (minuto_inicio + duracion_del_evento) // 60
 hora_fin = (hora_inicio + horas_adicionales) % 24
 

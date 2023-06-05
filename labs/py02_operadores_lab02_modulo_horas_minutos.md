@@ -15,7 +15,7 @@ hora_inicio = int(input("Hora de inicio (horas): "))
 minuto_inicio = int(input("Minuto de inicio (minutos): "))
 duración_del_evento = int(input("Duración del evento (minutos): "))
 
-# coloca tu código aquí
+# Coloca tu código aquí
 ```
 
 Pista: utilizar los operadores `%` y `//` puede ser clave para el éxito.
@@ -39,4 +39,3 @@ Pista: utilizar los operadores `%` y `//` puede ser clave para el éxito.
     1
     2939
     Salida esperada: 1:0
-

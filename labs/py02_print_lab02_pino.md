@@ -1,4 +1,4 @@
-3 LABORATORIO
+# LABORATORIO
 
 **Tiempo Estimado**: 5-10 minutos
 
