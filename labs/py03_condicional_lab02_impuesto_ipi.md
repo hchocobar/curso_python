@@ -40,7 +40,7 @@ algunos cálculos inteligentes.
 
 ```python
 ingreso = float(input("Ingrese el ingreso anual:"))
-# escribe aquí tu código
+# Escribe aquí tu código
 ```
 
 **Datos de prueba**
