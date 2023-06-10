@@ -1,5 +1,20 @@
 # Introducción
 
+<!-- TOC -->
+* [Introducción](#introducción)
+* [Instalaciones](#instalaciones)
+  * [Python](#python)
+  * [PyCharm](#pycharm)
+* [Intérprete de Python](#intérprete-de-python)
+* [PEPs - Python Enhancement Proposals](#peps---python-enhancement-proposals)
+  * [PEP 8 - Style Guide for Python Code](#pep-8---style-guide-for-python-code)
+    * [PEP 8: variables](#pep-8-variables)
+    * [PEP 8: constantes](#pep-8-constantes)
+    * [PEP 8: operadores](#pep-8-operadores)
+    * [PEP 8: comentarios](#pep-8-comentarios)
+    * [PEP 8: indentación](#pep-8-indentación)
+<!-- TOC -->
+
 Python es un lenguaje de programación.
 
 - a high level language (un lenguaje de alto nivel),
