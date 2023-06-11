@@ -1,5 +1,7 @@
 # Introducción
 
+**Tabla de Contenidos**
+
 <!-- TOC -->
 * [Introducción](#introducción)
 * [Instalaciones](#instalaciones)
@@ -130,10 +132,10 @@ monto_neto = (monto_bruto - importe_bonificacion) + monto_interes
 
 ### PEP 8: comentarios
 
-Comentarios en la misma línea del código deben separarse con dos espacios en blanco. Luego del símbolo # debe ir un solo espacio en blanco. 
+Comentarios en la misma línea del código deben separarse con dos espacios en blanco. Luego del símbolo # debe ir un solo espacio en blanco  e iniciar con la primera letra en mayúscula. 
 
 ```python
-a = 15  # edad de María 
+a = 15  # Edad de María 
 ```
 
 ### PEP 8: indentación
