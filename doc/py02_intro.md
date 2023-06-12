@@ -1,20 +1,25 @@
 # Introducción a Python
 
-**Contenido**
+**Tabla de Contenidos**
 
-- [Variables](#variables)
-- [Tipos de datos](#tipos-de-datos)
-- [Comentarios](#comentarios)
-- [Operadores](#operadores)
-  - [Operadores aritméticos](#operadores-aritmticos)
-  - [Orden de las operaciones](#orden-de-las-operaciones-el-uso-de-los-parntesis)
-  - [Operadores relacionales](#operadores-relacionales)
-  - [Operadores lógicos](#operadores-lgicos)
-  - [Operaciones lógicas y de bits](#operaciones-lgicas-y-de-bits)
-  - [Operador de asignación vs. comparación](#operadores-de-asignacin-vs-comparacin)
-- [Entrada de datos](#entrada-de-datos)
-- [Salida de datos](#salida-de-datos)
-- [Funciones integradas](#funciones-integradas)
+<!-- TOC -->
+* [Introducción a Python](#introducción-a-python)
+  * [Variables](#variables)
+  * [Tipos de datos](#tipos-de-datos)
+  * [Comentarios](#comentarios)
+  * [Operadores](#operadores)
+    * [Operadores Aritméticos](#operadores-aritméticos)
+    * [Orden de las Operaciones. El uso de los paréntesis](#orden-de-las-operaciones-el-uso-de-los-paréntesis)
+      * [Operadores y sus enlaces](#operadores-y-sus-enlaces)
+      * [Operadores unarios y binarios](#operadores-unarios-y-binarios)
+    * [Operadores Relacionales](#operadores-relacionales)
+    * [Operadores Lógicos](#operadores-lógicos)
+    * [Operaciones lógicas y de bits](#operaciones-lógicas-y-de-bits)
+    * [Operadores de asignación vs. comparación](#operadores-de-asignación-vs-comparación)
+  * [Salida de datos](#salida-de-datos)
+  * [Entrada de datos](#entrada-de-datos)
+  * [Funciones integradas](#funciones-integradas)
+<!-- TOC -->
 
 ## Variables
 
@@ -29,7 +34,7 @@ Al nombrar una variable debes seguir las siguientes reglas:
 - En nombre de la variable puede estar compuesto por 
   - letras, 
   - dígitos, y 
-  - el carácter _ (guion bajo).
+  - el carácter `_` (guion bajo).
 - El nombre de la variable debe comenzar con una letra.
   - El carácter guion bajo es considerado una letra.
 - Las mayúsculas y minúsculas se tratan en forma distinta (case sensitive).
@@ -43,9 +48,9 @@ Al nombrar una variable debes seguir las siguientes reglas:
 2. Una variable es creada o inicializada automáticamente cuando se le asigna un valor por primera vez.
 3. Cada variable debe de tener un nombre único (un identificador). 
    1. Un nombre válido debe ser aquel que no contiene espacios. 
-   2. Debe comenzar con un guion bajo (_), o una letra. 
+   2. Debe comenzar con una letra o guion bajo `_`. 
    3. No puede ser una palabra reservada de Python. 
-   4. El primer carácter puede estar seguido de guiones bajos, letras, y dígitos. 
+   4. El primer carácter puede estar seguido de guiones bajos, letras, o dígitos. 
    5. Las variables en Python son sensibles a mayúsculas y minúsculas.
 4. Python es un lenguaje de tipado dinámico, lo que significa que no se necesita declarar variables en él. Para asignar valores a las variables, se utiliza simplemente el operador de asignación, es decir el signo de igual `=`, por ejemplo: `foo = 1`.
 5. También es posible utilizar operadores de asignación compuesta (operadores abreviados) para modificar los valores asignados a las variables, por ejemplo: `var += 1`, or `var -= 5`.
@@ -68,10 +73,10 @@ de varias lineas """
 edad = 35
 numero_grande = 35E8
 numero_grande = 35e8
-numero_octal = 0o35  # número entero octal
-numero_octal = 0O35  # número entero octal
-numero_hexa = 0x35  # número entero hexadecimal
-numero_hexa = 0X35  # número entero hexadecimal
+numero_octal = 0o35  # Número entero octal
+numero_octal = 0O35  # Número entero octal
+numero_hexa = 0x35  # Número entero hexadecimal
+numero_hexa = 0X35  # Número entero hexadecimal
 
 # Números reales
 precio = 7435.28
@@ -90,20 +95,20 @@ variable_vacia = None
 
 **Resumen**
 
-1. Los **Literales** son notaciones para representar valores fijos en el código. Python tiene varios tipos de literales, es decir, un literal puede ser un número por ejemplo, 123), o una cadena (por ejemplo, "Yo soy un literal.").
-2. El **Sistema Binario** es un sistema numérico que emplea 2 como su base. Por lo tanto, un número binario está compuesto por 0s y 1s únicamente, por ejemplo, 1010 es 10 en decimal.
-3. Los sistemas de numeración **Octales y Hexadecimales** son similares pues emplean 8 y 16 como sus bases respectivamente. El sistema hexadecimal utiliza los números decimales más seis letras adicionales.
-4. Los **Enteros** (o simplemente int) son uno de los tipos numéricos que soporta Python. Son números que no tienen una parte fraccionaria, por ejemplo, 256, o -1 (enteros negativos).
-5. Los números **Punto-Flotante** (o simplemente flotantes) son otro tipo numérico que soporta Python. Son números que contienen (o son capaces de contener) una parte fraccionaria, por ejemplo: 1.27.
-6. Para codificar un apóstrofe o comillas dentro de una cadena se puede utilizar el **carácter de escape**, por ejemplo, 'I\'m happy.', o abrir y cerrar la cadena utilizando un conjunto de símbolos distintos al símbolo que se desea codificar, por ejemplo, "I'm happy." para codificar un apóstrofe, y 'Él dijo "Python", no "typhoon"' para codificar comillas.
-7. Los **Valores Booleanos** son dos objetos constantes Verdadero y Falso empleados para representar valores de verdad (en contextos numéricos 1 es True, mientras que 0 es False).
-8. Existe un literal especial más utilizado en Python: el literal **None**. Este literal es llamado un objeto de NonType (ningún tipo), y puede ser utilizado para representar la ausencia de un valor.
+1. Los **Literales** son notaciones para representar valores fijos en el código. Python tiene varios tipos de literales, es decir, un literal puede ser un número por ejemplo, `123`), o una cadena (por ejemplo, `"Yo soy una cadena"`).
+2. El **Sistema Binario** es un sistema numérico que emplea 2 como su base. Por lo tanto, un número binario está compuesto únicamente por ceros y unos, por ejemplo, `1010` equivale a 10 en base decimal.
+3. Los sistemas de numeración **Octales y Hexadecimales** son similares pues emplean 8 y 16 como sus bases respectivamente. El sistema hexadecimal utiliza los números decimales más seis letras adicionales `0 1 2 3 4 5 6 7 8 9 A B C D E F`.
+4. Los **Enteros** (o simplemente int) son uno de los tipos numéricos que soporta Python. Son números que no tienen una parte fraccionaria, por ejemplo, `256`, o `-1` (enteros negativos).
+5. Los números **Punto-Flotante** (o simplemente flotantes) son otro tipo numérico que soporta Python. Son números que contienen (o son capaces de contener) una parte fraccionaria, por ejemplo: `1.27`.
+6. Para codificar un apóstrofe o comillas dentro de una cadena se puede utilizar el **carácter de escape:** \\, por ejemplo, `'I\'m happy.'`, o abrir y cerrar la cadena utilizando un conjunto de símbolos distintos al símbolo que se desea codificar. Por ejemplo, `"I'm happy."` utilizamos comillas dobles para codificar un apóstrofe. En otro ejemplo, `'Él dijo "Python", no "typhoon"'` utilizamos apóstrofe para codificar comillas dobles.
+7. Los **Valores Booleanos** son dos objetos constantes `True` o `False` para representar Verdadero y Falso respectivamente. En contextos numéricos 1 es `True`, mientras que 0 es `False`.
+8. Existe un literal especial más utilizado en Python: el literal `None`. Este literal es llamado un objeto de NonType (ningún tipo), y puede ser utilizado para representar la ausencia de un valor.
 
 ## Comentarios
 
 Un archivo, no solo puede contener código fuente. También puede incluir comentarios (notas que como programadores, indicamos en el código para poder comprenderlo mejor).
 
-Los comentarios pueden ser de dos tipos: de una sola línea o multi-línea y se expresan de la siguiente manera:
+Los comentarios pueden ser de dos tipos: de una sola línea o multilínea y se expresan de la siguiente manera:
 
 ```python
 # Esto es un comentario de una sola línea
@@ -148,7 +153,7 @@ Una operación se define cuando se utiliza un operador (alguno de los sı́mbolo
 A la siguiente fórmula:
 
 ```python
-5 + 30 * 20  # resultado: 605
+5 + 30 * 20  # Resultado: 605
 ```
 
 La resolvemos: _multiplicando 30 por 20, y luego sumamos 5 al resultado_ (se multiplica primero porque la multiplicación tiene mayor orden que la suma).
@@ -156,7 +161,7 @@ La resolvemos: _multiplicando 30 por 20, y luego sumamos 5 al resultado_ (se mul
 La siguiente fórmula muestra otro resultado:
 
 ```python
-(5 + 30) * 20  # resultado: 700
+(5 + 30) * 20  # Resultado: 700
 ```
 
 Porque los paréntesis controlan el orden de las operaciones. Con los paréntesis, Python sabe que tiene que calcular primero todos los operadores que están dentro de los paréntesis, y luego los de fuera. Por eso esta fórmula se resuelve _sumando 5 a 30 y luego multiplicando el resultado por 20_.
@@ -173,7 +178,7 @@ Todos los otros operadores son binarios, porque necesitan dos operandos.
 
 ### Operadores Relacionales
 
-Los operadores relacionales o de comparación se utilizan, como su nombre indica, para comparar dos o más valores. El resultado de estos operadores siempre es True o False.
+Los operadores relacionales o de comparación se utilizan, como su nombre indica, para comparar dos o más valores. El resultado de estos operadores siempre es `True` o `False`.
 
 | Operador | Descripción            | Verdadero o True                                                           | Falso o False     |
 |:--------:|:----------------------:| -------------------------------------------------------------------------- | ----------------- |
@@ -190,11 +195,11 @@ Las operaciones lógicas son expresiones matemáticas cuyo resultado es un valor
 
 En álgebra de Boole las operaciones básicas son tres y son la base para la programación en todos los lenguajes:
 
-- **Y** Producto lógico, puerta AND o función intersección
-- **O**    Suma lógica, puerta OR o función unión
-- **NO** Negación lógica, puerta NOT o función complemento
+- **Y** también denominado: producto lógico, puerta AND o función intersección
+- **O** también denominado: Suma lógica, puerta OR o función unión
+- **NO** también denominado: Negación lógica, puerta NOT o función complemento
 
-| Operador en Python | Significado | Lógica Proposicional | Funciones Lógicas | Electrónica, Hidraúlica | Conjuntos    |
+| Operador en Python | Significado | Lógica Proposicional | Funciones Lógicas | Electrónica, Hidráulica | Conjuntos    |
 |:------------------:|:-----------:|:--------------------:|:-----------------:|:-----------------------:|:------------:|
 | `and`              | Y           | ^                    | Producto Lógico   | Puerta AND              | Intersección |
 | `or`               | O           | ∨                    | Suma Lógica       | Puerta OR               | Unión        |
@@ -203,12 +208,12 @@ En álgebra de Boole las operaciones básicas son tres y son la base para la pro
 ### Operaciones lógicas y de bits
 
 1. Python es compatible con los siguientes operadores lógicos:
-   1. and → si ambos operandos son verdaderos, la condición es verdadera, por ejemplo, (True and True) es True.
-   2. or → si alguno de los operandos es verdadero, la condición es verdadera, por ejemplo, (True or False) es True.
-   3. not → devuelve False si el resultado es verdadero y devuelve True si es falso, por ejemplo, not True es False.
+   - and → si ambos operandos son verdaderos, la condición es verdadera, por ejemplo, (True and True) es True.
+   - or → si alguno de los operandos es verdadero, la condición es verdadera, por ejemplo, (True or False) es True.
+   - not → devuelve False si el resultado es verdadero y devuelve True si es falso, por ejemplo, not True es False.
 2. Puedes utilizar operadores bit a bit para manipular bits de datos individuales. Los siguientes datos de muestra:
-   1. `x = 15`, el cual es `0000 1111` en binario.
-   2. `y = 16`, el cual es `0001 0000` en binario.
+   - `x = 15`, el cual es `0000 1111` en binario.
+   - `y = 16`, el cual es `0001 0000` en binario.
 
 Se utilizarán para ilustrar el significado de operadores bit a bit en Python. Analiza los ejemplos a continuación:
 
@@ -221,15 +226,15 @@ Se utilizarán para ilustrar el significado de operadores bit a bit en Python. A
 
 ### Operadores de asignación vs. comparación
 
-Importante: Asignación (=) vs. comparación (==)
+Importante: Asignación `=` vs. comparación `==`
 
-Muy importante: No confundir el operador de comparar si son iguales (==) con la asignación (=) de un valor a una variable.
+Importante: No confundir el operador de comparar si son iguales `==`, con la asignación `=` de un valor a una variable.
 
 ## Salida de datos
 
 La función `print()` en Python
 
-En Informática, la "salida" de un programa son los datos que el programa proporciona al exterior. Aunque en los inicios de la informática la salida más habitual era una impresora, hace muchos años que el dispositivo de salida más habitual es la pantalla de la computadora.
+En Informática, la "salida" de un programa son los datos que el programa proporciona al exterior. Aunque en los inicios de la informática la salida más habitual era hacia una impresora, hace muchos años que el dispositivo de salida más habitual es la pantalla de la computadora.
 
 En los programas, para que Python nos muestre texto o variables hay que utilizar la función `print()`.
 
@@ -239,11 +244,13 @@ Argumentos de palabras clave: La función `print()` tiene dos argumentos de pala
 
 ## Entrada de datos
 
-La función `input()`  permite a los usuarios introducir datos desde la entrada estándar (el teclado). La función `input()` siempre devuelve una cadena de texto.
+La función `input()`  permite a los usuarios introducir datos desde la entrada estándar (el teclado).
 
-La función input muestra el valor de ‘prompt’ -si es que se ha añadido como argumento de la función-, lee una línea desde la entrada estándar -el teclado-, la convierte en cadena de texto y la devuelve como resultado de la función.
+La función `input()` siempre devuelve una cadena de texto.
 
-De forma predeterminada, la función input() convierte la entrada en una cadena, aunque escribamos un número.
+La función `input()` muestra el valor de ‘prompt’ -si es que se ha añadido como argumento de la función-, lee una línea desde la entrada estándar -el teclado-, la convierte en cadena de texto y la devuelve como resultado de la función.
+
+De forma predeterminada, la función `input()` convierte la entrada en una cadena, aunque escribamos un número.
 
 **Conversión de datos o casting**
 
@@ -254,6 +261,8 @@ Python ofrece dos simples funciones para especificar un tipo de dato y resolver 
 
 ## Funciones integradas
 
-También denominadas **funciones built-in**. El intérprete de Python tiene una serie de funciones y tipos incluidos en él que están siempre disponibles.
+También denominadas **funciones built-in**.
+
+El intérprete de Python tiene una serie de funciones y tipos incluidos en él que están siempre disponibles.
 
 Tendrás un detalle de cada una de ellas en la [documentación oficial](https://docs.python.org/es/3.9/library/functions.html)
