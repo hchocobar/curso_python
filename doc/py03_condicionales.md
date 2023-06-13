@@ -1,5 +1,17 @@
 # 3. Condicionales
 
+<!-- TOC -->
+* [3. Condicionales](#3-condicionales)
+  * [3.1.- Estructura if-elif-else](#31--estructura-if-elif-else)
+  * [Condicionales combinados](#condicionales-combinados)
+  * [Tablas de Verdad](#tablas-de-verdad)
+  * [Ejemplos](#ejemplos)
+    * [Ejemplo 1](#ejemplo-1)
+    * [Ejemplo 2](#ejemplo-2)
+    * [Ejemplo 3](#ejemplo-3)
+    * [Ejemplo 4](#ejemplo-4)
+<!-- TOC -->
+
 ¿Cómo decidimos qué camino tomar en Python?
 
 ## 3.1.- Estructura if-elif-else
@@ -71,3 +83,71 @@ Suma lógica, puerta OR o función unión.
 |   Falso   |  Verdadero  |
 | Verdadero |    Falso    |
 
+## Ejemplos
+
+### Ejemplo 1
+
+```python
+number_1 = int(input("Ingrese el primer número: "))
+number_2 = int(input("Ingrese el segundo número: "))
+number_3 = int(input("Ingrese el tercer número: "))
+# Número mayor
+if number_2 <= number_1 and number_1 >= number_3:
+    print("El número mayor es: ", number_1)
+elif number_2 > number_1 and number_2 > number_3:
+    print("El número mayor es: ", number_2)
+elif number_3 > number_1 and number_3 > number_1:
+    print("El número mayor es: ", number_3)
+
+```
+
+### Ejemplo 2
+
+```python
+number = int(input("Ingrese un número: "))
+if number < 0:  # Negativo
+    print("El número es negativo")
+elif number == 0:  # Cero
+    print("El número es cero")
+else:  # Positivo
+    print("El número es positivo")
+```
+
+### Ejemplo 3
+
+```python
+number = int(input("Ingrese un número: "))
+# Convertimos el número en positivo
+if number < 0:
+    number = number * -1
+# Determinamos la cantidad de dígitos
+if 0 <= number < 10:  # Un dígito
+    print("El número tiene un dígito")
+elif 10 <= number < 100:  # Dos dígitos
+    print("El número tiene dos dígitos")
+elif 100 <= number < 1000:  # Tres dígitos
+    print("El número tiene tres dígitos")
+elif number >= 1000:  # Más de tres dígitos
+    print("El número tiene más de tres dígitos")
+
+```
+
+### Ejemplo 4
+
+```python
+preguntas = int(input("Ingrese la cantidad de preguntas: "))
+correctas = int(input("Ingrese la cantidad de respuestas correctas: "))
+# Porcentaje
+porcentaje = float(correctas * 100) / preguntas
+# Nivel
+if porcentaje >= 90:
+    print("Nivel Excelente")
+elif 75 <= porcentaje < 90:
+    print("Nivel medio")
+elif 50 <= porcentaje < 75:
+    print("Nivel regular")
+elif porcentaje < 50:
+    print("Nivel bajo")
+print(porcentaje)
+
+```
