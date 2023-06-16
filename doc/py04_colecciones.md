@@ -11,6 +11,8 @@
     * [Puntos claves](#puntos-claves-1)
     * [Función `tuple()`](#función-tuple)
   * [Diccionarios](#diccionarios)
+    * [Definición](#definición-2)
+    * [Puntos Claves](#puntos-claves-2)
   * [Conjuntos](#conjuntos)
   * [Casos especiales](#casos-especiales)
     * [Colas](#colas)
@@ -211,6 +213,149 @@ print(type(mi_lista))  # Salida: <class 'list'>
 ```
 
 ## Diccionarios
+
+### Definición
+
+Los diccionarios son colecciones indexadas de datos, mutables y desordenadas.
+
+> Nota: Desde Python 3.6x los diccionarios están ordenados de manera predeterminada.
+
+### Puntos Claves
+
+1. Cada diccionario es un par de `clave : valor`. Podemos crearlo empleado la siguiente sintaxis:
+
+```python
+mi_diccionario = {clave_1 : valor_1,
+                  clave_3 : valor_3,
+                  clave_2 : valor_2}
+
+```
+
+2. Si se desea acceder a un elemento del diccionario, se puede hacer haciendo referencia a su clave colocándola dentro de corchetes (ejemplo 1) o utilizando el método get() (ejemplo 2):
+
+```python
+person = {"first_name": 'Joe',
+          "last_name": "Doe",
+          "email": "joe.doe@domain.com"}
+
+element = person["email"]  # Ejemplo 1
+print(element)  # Salida: joe.doe@domain.com
+
+item = person.get("last_name")  # Ejemplo 2
+print(item)  # Salida: Doe
+```
+
+3. Cambiamos el valor asociado a una clave específica, haciendo referencia a la clave del elemento.
+
+```python
+person = {"first_name": "unknown",
+          "last_name": "Doe",
+          "email": "unknown"}
+
+person["first_name"] = "Joe"  
+person['email'] = "joe.doe@domain.com"
+print(person)  # Salida: {'first_name': 'Joe', 'last_name': 'Doe', 'email': 'joe.doe@domain.com'}
+```
+
+4. Para agregar o eliminar una clave (junto con su valor asociado), utilice la siguiente sintaxis:
+
+```python
+mi_agenda = {}  # Crea un diccionario vacio
+
+mi_agenda["Adan"] = 3323314748  # Crea o añade un par clave-valor
+mi_agenda["Jane"] = 3015005042  # Crea o añade un par clave-valor
+
+print(mi_agenda)  # Salida: {'Adan': 3323314748, 'Jane': 3015005042}
+
+del mi_agenda["Adan"]
+print(mi_agenda)  # Salida: {'Jane': 3015005042}
+```
+
+5. Además, se puede insertar un elemento a un diccionario utilizando el método `update()`, y eliminar el ultimo elemento con el método `popitem()`, por ejemplo:
+
+```python
+person = {"first_name": 'Joe',
+          "last_name": "Doe",
+          "email": "joe.doe@domain.com"}
+
+person.update({"age": 35})
+print(person)  # Salida: {'first_name': 'Joe', 'last_name': 'Doe', 'email': 'joe.doe@domain.com', 'age': 35}
+
+person.popitem()
+print(person)  # Salida: {'first_name': 'Joe', 'last_name': 'Doe', 'email': 'joe.doe@domain.com'}
+```
+
+6. Podemos emplear el bucle for para iterar a través del diccionario, por ejemplo:
+
+```python
+person = {"first_name": 'Joe',
+          "last_name": "Doe",
+          "email": "joe.doe@domain.com"}
+
+for clave in person:
+    print(clave)  # Salida: first_name
+                  #         last_name
+                  #         email
+```
+
+7. Si deseas examinar los elementos (claves y valores) del diccionario, puedes emplear el método `items()` por ejemplo:
+
+```python
+person = {"first_name": 'Joe',
+          "last_name": "Doe",
+          "email": "joe.doe@domain.com"}
+
+for clave, valor in person.items():
+    print("The value of <", clave, "> is:", valor)
+
+# Salida:
+# The value of < first_name > is: Joe
+# The value of < last_name > is: Doe
+# The value of < email > is: joe.doe@domain.com
+```
+
+7. Para comprobar si una clave existe en un diccionario, se puede emplear la palabra reservada `in`:
+
+```python
+person = {"first_name": 'Joe',
+          "last_name": "Doe",
+          "email": "joe.doe@domain.com"}
+
+if "name" in person:
+    print("La clave existe")
+else:
+    print("La clave NO existe")
+
+# Salida: La clave NO existe
+```
+
+
+8. Se puede emplear la palabra reservada `del` para eliminar un elemento, o un diccionario entero. Para eliminar todos los elementos de un diccionario se debe emplear el método `clear()`:
+
+```python
+person = {"first_name": 'Joe',
+          "last_name": "Doe",
+          "email": "joe.doe@domain.com"}
+
+print(len(person))  # Salida: 3
+del person["first_name"]  # Elimina un elemento
+print(len(person))  # Salida: 2
+
+person.clear()  # Elimina todos los elementos
+print(len(person))  # Salida: 0
+
+del person  # Elimina el diccionario
+```
+
+9. Para copiar un diccionario, emplea el método `copy()`:
+
+```python
+person = {"first_name": 'Joe',
+          "last_name": "Doe",
+          "email": "joe.doe@domain.com"}
+
+copy_person = person.copy()
+```
 
 ## Conjuntos
 
