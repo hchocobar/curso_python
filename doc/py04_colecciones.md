@@ -14,6 +14,10 @@
     * [Definición](#definición-2)
     * [Puntos Claves](#puntos-claves-2)
   * [Conjuntos](#conjuntos)
+    * [Definición](#definición-3)
+    * [Creación de conjuntos](#creación-de-conjuntos)
+    * [Construcción por Comprensión](#construcción-por-comprensión)
+    * [Operaciones](#operaciones)
   * [Casos especiales](#casos-especiales)
     * [Colas](#colas)
     * [Pilas](#pilas)
@@ -260,7 +264,7 @@ print(person)  # Salida: {'first_name': 'Joe', 'last_name': 'Doe', 'email': 'joe
 4. Para agregar o eliminar una clave (junto con su valor asociado), utilice la siguiente sintaxis:
 
 ```python
-mi_agenda = {}  # Crea un diccionario vacio
+mi_agenda = {}  # Crea un diccionario vacío
 
 mi_agenda["Adan"] = 3323314748  # Crea o añade un par clave-valor
 mi_agenda["Jane"] = 3015005042  # Crea o añade un par clave-valor
@@ -271,7 +275,7 @@ del mi_agenda["Adan"]
 print(mi_agenda)  # Salida: {'Jane': 3015005042}
 ```
 
-5. Además, se puede insertar un elemento a un diccionario utilizando el método `update()`, y eliminar el ultimo elemento con el método `popitem()`, por ejemplo:
+5. Además, se puede insertar un elemento a un diccionario utilizando el método `update()`, y eliminar el último elemento con el método `popitem()`, por ejemplo:
 
 ```python
 person = {"first_name": 'Joe',
@@ -358,6 +362,86 @@ copy_person = person.copy()
 ```
 
 ## Conjuntos
+
+### Definición
+
+Un conjunto es una colección no ordenada y sin elementos repetidos. Dicho de otra manera: colección no ordenada de objetos distintos.
+
+### Creación de conjuntos
+
+Las `{}` llaves o la función `set()` se utilizan para crear conjuntos.
+
+**Nota:** Para crear un conjunto vacío se debe utilizar `set()`, no `{}` porque sino estamos creando un diccionario vacío.
+
+Una pequeña demostración:
+
+```python
+# Creación de conjunto mediante {}
+
+mi_conjunto = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+print(mi_conjunto)  # Salida: {'orange', 'banana', 'pear', 'apple'}
+print('orange' in mi_conjunto)  # Salida: True
+print('crabgrass' in mi_conjunto)  # Salida: False
+
+# Creación de conjunto mediante set()
+a = set()  # Crea un conjunto vacío
+print(type(a))  # Salida: <class 'set'>
+
+
+# Comparación de creación de conjunto desde una palabra
+conjunto_letras = set('abracadabra')  # Crea un conjunto con todas las letras únicas de la palabra
+conjunto_palabra = {'abracadabra'}  # Crea un conjunto con un solo elemento
+print(conjunto_letras)  # Salida: {'r', 'b', 'd', 'c', 'a'}
+print(conjunto_palabra)  # Salida: {'abracadabra'}
+print(type(conjunto_letras), type(conjunto_palabra))  # Salida: <class 'set'> <class 'set'>
+
+# La función set() recibe un solo argumento
+mi_conjunto = set(['apple', 'pear', 'apple'])  # Recibe una lista y la transforma en un conjunto
+print(mi_conjunto)  # Salida: {'pear', 'apple'}
+```
+
+### Construcción por Comprensión
+
+De forma similar a las comprensiones de listas, los conjuntos también soportan la comprensión.
+
+```python
+# Construcción de un conjunto utilizando comprensión
+mi_conjunto = {x for x in 'abracadabra'}
+print(mi_conjunto)  # Salida {'r', 'c', 'a', 'b', 'd'}
+
+# Otro ejemplo
+mi_conjunto = {x for x in 'abracadabra' if x not in 'abc'}
+print(mi_conjunto)  # Salida {'r', 'd'}
+```
+
+### Operaciones
+
+Los conjuntos soportan operaciones matemáticas como la unión`|`, intersección`&`, diferencia `-`, y diferencia simétrica `^`.
+
+También soportan los operadores `in` y `not in`.
+
+```python
+# Operaciones con conjuntos
+# Debes notar que la salida no siempre se muestran en el mismo orden si ejecutas varias veces el programa
+a = set('abracadabra')
+b = set('alacazam')
+
+# Letras únicas en los conjuntos
+print(a)  # Salida: {'r', 'b', 'd', 'c', 'a'}
+print(b)  # Salida: {'l', 'a', 'c', 'm', 'z'}
+
+# Diferencia: letras únicas en 'a' pero no en 'b'
+print(a - b)  # Salida: {'r', 'd', 'b'}
+
+# Unión: letras en 'a' o 'b' o en ambas
+print(a | b)  # Salida {'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'}
+
+# Intersección: letras en 'a' y 'b'
+print(a & b)  # Salida: {'a', 'c'}
+
+# Diferencia Simétrica: letras en 'a' o 'b' pero no en ambas
+print(a ^ b)  # Salida: {'r', 'd', 'b', 'm', 'z', 'l'}
+```
 
 ## Casos especiales
 
