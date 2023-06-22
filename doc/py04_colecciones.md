@@ -20,7 +20,12 @@
     * [Operaciones](#operaciones)
   * [Casos especiales](#casos-especiales)
     * [Colas](#colas)
+      * [Recordemos](#recordemos)
+      * [Usando listas como colas](#usando-listas-como-colas)
     * [Pilas](#pilas)
+      * [Recordemos](#recordemos-1)
+      * [Usando listas como pilas](#usando-listas-como-pilas)
+      * [Implementando Pilas con Clases](#implementando-pilas-con-clases)
 <!-- TOC -->
 
 ## Listas
@@ -447,4 +452,144 @@ print(a ^ b)  # Salida: {'r', 'd', 'b', 'm', 'z', 'l'}
 
 ### Colas
 
+#### Recordemos
+
+Las colas se corresponden con FIFO (First Input, First Output).
+
+#### Usando listas como colas
+
+Si bien es posible usar una lista como una cola, donde el primer elemento añadido es el primer elemento retirado (primero en entrar, primero en salir); resulta que las listas no son eficientes para este propósito (refiriéndonos a optimización de proceso y memoria).
+
+Agregar y sacar del final de la lista es rápido, pero insertar o sacar del comienzo de una lista es lento (porque todos los otros elementos tienen que ser desplazados por uno).
+
+Para implementar una cola, utilizamos `collections.deque` que fue diseñado para añadir y quitar elementos de ambos extremos de forma óptima.
+
+
+Sintaxis:
+
+    deque([iterable[, maxlen]])
+
+    donde:
+
+	iterable  Son los elementos de la cola, si se omite se crea una deque vacía.
+
+	maxlen	  Es el limite del largo de la deque, si se omite no tiene límite.
+
+Por ejemplo:
+
+```python
+# Implementación de una cola utilizando listas y collections.deque
+from collections import deque
+
+
+# Creamos la cola
+my_queue = deque(["Eric", "John", "Michael"])
+
+# Agregamos elementos al final de la cola
+my_queue.append("Terry")
+my_queue.append("Graham")
+print(my_queue)  # Salida: deque(['Eric', 'John', 'Michael', 'Terry', 'Graham'])
+
+# Extraemos elementos del inicio de la cola
+my_queue.popleft()
+print(my_queue)  # Salida: deque(['John', 'Michael', 'Terry', 'Graham'])
+my_queue.popleft()
+print(my_queue)  # Salida: deque(['Michael', 'Terry', 'Graham'])
+
+```
+
+
+Como mencionamos arriba, `collections.deque` soporta agregar y quitar elementos desde ambos extremos de la lista con los métodos
+
+```python
+my_queue.appendleft('Jessica')
+print(my_queue)  # Salida: deque(['Jessica', 'Michael', 'Terry', 'Graham'])
+my_queue.pop()  # Remueve y devuelve el elemento del lado derecho de la cola 'Graham'
+
+```
+
+También soporta los siguientes métodos, entre otros:
+
+```python
+my_queue.insert(i, x)  # Inserta x en la posición i
+my_queue.remove(value)  # Remueve la primer ocurrencia de value en la cola
+my_queue.clear()  # Remueve todos los elementos de la cola
+my_queue.reverse() 
+my_queue.copy()
+my_queue.count(x)  # Cuenta el número de elementos x en la cola
+```
+
+[Documentación oficial: collections.deque](https://docs.python.org/3/library/collections.html#collections.deque)
+
 ### Pilas
+
+#### Recordemos
+
+Las Pilas se corresponden con LIFO (Last Input, First Output).
+
+#### Usando listas como pilas
+
+Los métodos de lista hacen que resulte muy fácil utilizar una lista como una pila.
+
+Para agregar un elemento a la cima de la pila, utilizamos `append()`.
+
+Para retirar un elemento de la cima de la pila, utilizamos `pop()` sin un índice explícito.
+
+Por ejemplo:
+
+```python
+# Implementación de una pila utilizando listas
+my_stack = [3, 4, 5]
+print(my_stack)  # Salida: [3, 4, 5]
+
+# Apilamos (agregamos) elementos utilizando .append()
+my_stack.append(6)
+my_stack.append(7)
+print(my_stack)  # Salida: [3, 4, 5, 6, 7]
+
+# Des-apilamos (sacamos) elementos utilizando .pop()
+my_stack.pop()  # Elimina el último elemento 7
+print(my_stack)  # Salida: [3, 4, 5, 6]
+my_stack.pop()
+print(my_stack)  # Salida: [3, 4, 5]
+my_stack.pop()
+print(my_stack)  # Salida: [3, 4]
+```
+
+> Nota: Pero, en esta implementación, dentro del código pueden realizar `insert` o `del` y de esa manera modifican nuestra pila. Y esto no es lo que queremos de una pila.
+
+#### Implementando Pilas con Clases
+
+Implementar pilas utilizando clases nos brinda las siguientes ventajas:
+
+- Encapsula el contenido de la pila (aunque no del todo)
+- Sobre el objeto solo se pueden ejecutar los métodos definidos.
+
+```python
+# Implementación de una Pila mediante una clase
+class Pila:
+    def __init__(self):  # Constructor de la clase
+        self.__lista_pila = []  # Encapsulamos
+
+    def push(self, value):
+        self.__lista_pila.append(value)
+
+    def pop(self):
+        value = self.__lista_pila[-1]
+        del self.__lista_pila[-1]
+        return value
+
+
+objeto_pila = Pila()
+
+objeto_pila.push(3)
+objeto_pila.push(2)
+objeto_pila.push(1)
+
+print(objeto_pila.pop())
+print(objeto_pila.pop())
+print(objeto_pila.pop())
+
+''' Nota: Faltaría implementar un try/except para evitar el error que 
+ocasionaría un pop() en una pila vacía.'''
+```
