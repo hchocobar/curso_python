@@ -1,5 +1,23 @@
 # Módulos
- 
+
+<!-- TOC -->
+* [Módulos](#módulos)
+  * [Módulos de Python](#módulos-de-python)
+  * [Importando Módulos](#importando-módulos)
+    * [Primer método de importación: `import`](#primer-método-de-importación-import)
+    * [¿Qué es el namespaces?](#qué-es-el-namespaces)
+    * [Segundo método de importación: `from` … `import`](#segundo-método-de-importación-from--import)
+    * [Tercer método de importación: `*`](#tercer-método-de-importación-)
+    * [La palabra reservada `as`](#la-palabra-reservada-as)
+    * [La función `dir()`](#la-función-dir)
+* [Todos los Módulos de Python](#todos-los-módulos-de-python)
+  * [El módulo `math`](#el-módulo-math)
+    * [Funciones trigonométricas](#funciones-trigonométricas)
+    * [Funciones relacionadas con la exponenciación](#funciones-relacionadas-con-la-exponenciación)
+    * [Funciones de propósito general](#funciones-de-propósito-general)
+  * [El módulo `platform`](#el-módulo-platform)
+<!-- TOC -->
+
 ## Módulos de Python
 
 Junto con Python se entregan una gran cantidad de módulos. Todos estos módulos, junto con las funciones integradas, forman la **Biblioteca estándar de Python**. 
