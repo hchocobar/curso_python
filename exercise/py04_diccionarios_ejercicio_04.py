@@ -6,7 +6,7 @@ colores = {"blanco": (255, 255, 255),
 for col, rgb in colores.items():
     print(col, ":", rgb)
 
-# Resultado
+# Salida:
 # blanco: (255, 255, 255)
 # gris: (128, 128, 128)
 # rojo: (255, 0, 0)

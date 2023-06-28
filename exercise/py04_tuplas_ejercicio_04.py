@@ -1,10 +1,6 @@
-# Escribe un programa que convierta la lista lst en una tupla.
-
-# lst = ["carro", "Ford", "flor", "Tulipán"]
-# tup = # tu código
-# print(t)
+# Escribe un programa que convierta la lista my_lista en una tupla.
+my_lista = ["carro", "Ford", "flor", "Tulipán"]
 
 # Solución muestra:
-lst = ["carro", "Ford", "flor", "Tulipán"]
-tup = tuple(lst)
+my_tuple = tuple(my_lista)
 print(tup)
