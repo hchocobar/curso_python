@@ -12,7 +12,7 @@
 
 ## Descripción
 
-Este repositorio contiene el curso **Principios de Programación con Python** que dictado durante años. 
+Este repositorio contiene el curso **Principios de Programación con Python** que se ha dictado durante años. 
 - Puntos claves sobre cada tema. 
 - Ejercicios resueltos y a resolver 
 - Laboratorios o desafíos de distinta complejidad.
@@ -61,7 +61,7 @@ Este repositorio contiene el curso **Principios de Programación con Python** qu
 6. Cadenas
    - Cadenas
    - Cadenas de caracteres
-   - Indices y slicing
+   - Índices y slicing
    - Métodos para cadenas (parte1)
 7. Funciones
    - Funciones sin retorno de valor
@@ -86,9 +86,9 @@ Este repositorio contiene el curso **Principios de Programación con Python** qu
 # Recomendaciones
 
 1. **Linux**. En un entorno Linux, Python es provisto en forma nativa. Esto significa que viene preinstalado y con soporte permanente. Por ello, sin dudas, podrás desarrollar mejor tu potencial. Recuerda que tanto Linux como Python tienen licencia de código abierto y están soportados por una gran comunidad. 
-2. **Ubuntu Desktop**. Si aún no utilizas Linux como sistema operativo para tu PC o Notebook, creo que este es el momento adecuado para migrar. Para ello puedo recomendarte Ubuntu Desktop. Algo importante, siempre descargar e instalar una versión LTS (Long-term support).
+2. **Ubuntu Desktop**. Si aún no utilizas Linux como sistema operativo para tu PC o Notebook, creo que este es el momento adecuado para migrar. Para ello, puedo recomendarte Ubuntu Desktop. Algo importante, siempre descargar e instalar una versión LTS (Long-term support).
 3. **PyCharm Community Edition**. Si vas a dedicarte a desarrollar con Python, te recomiendo que utilices PyCharm como el principal entorno de desarrollo (IDE). PyCharm brinda una versión gratuita llamada Community Edition.
-4. **PEP8 – Style Guide for Python Code**. Guía de Estilo para escribir código en Python. Interiorízate muy bien de las buenas prácticas para escribir código en Python.  
+4. **PEP8 – Style Guide for Python Code**. Guía de Estilo para escribir código en Python. Interioriza muy bien las buenas prácticas para escribir código en Python.  
 
 # Enlaces
 
