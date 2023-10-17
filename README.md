@@ -83,14 +83,14 @@ Este repositorio contiene el curso **Principios de Programación con Python** qu
     - Conditional comprehension, ternary operator
     - y más
 
-# Recomendaciones a tener en cuenta
+# Recomendaciones:
 
 1. **Linux**. En un entorno Linux, Python es provisto en forma nativa. Esto significa que viene preinstalado y con soporte permanente. Por ello, sin dudas, podrás desarrollar mejor tu potencial. Recuerda que tanto Linux como Python tienen licencia de código abierto y están soportados por una gran comunidad. 
 2. **Ubuntu Desktop**. Si aún no utilizas Linux como sistema operativo para tu PC o Notebook, creo que este es el momento adecuado para migrar. Para ello, puedo recomendarte Ubuntu Desktop. Algo importante, siempre descargar e instalar una versión LTS (Long-term support).
 3. **PyCharm Community Edition**. Si vas a dedicarte a desarrollar con Python, te recomiendo que utilices PyCharm como el principal entorno de desarrollo (IDE). PyCharm brinda una versión gratuita llamada Community Edition.
 4. **PEP8 – Style Guide for Python Code**. Guía de Estilo para escribir código en Python. Interioriza muy bien las buenas prácticas para escribir código en Python.  
 
-# Enlaces
+# Enlaces importantes:
 
 [Python](https://www.python.org) |
 [PEP8](https://peps.python.org/pep-0008/) |
