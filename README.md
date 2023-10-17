@@ -83,7 +83,7 @@ Este repositorio contiene el curso **Principios de Programación con Python** qu
     - Conditional comprehension, ternary operator
     - y más
 
-# Recomendaciones
+# Recomendaciones a tener en cuenta
 
 1. **Linux**. En un entorno Linux, Python es provisto en forma nativa. Esto significa que viene preinstalado y con soporte permanente. Por ello, sin dudas, podrás desarrollar mejor tu potencial. Recuerda que tanto Linux como Python tienen licencia de código abierto y están soportados por una gran comunidad. 
 2. **Ubuntu Desktop**. Si aún no utilizas Linux como sistema operativo para tu PC o Notebook, creo que este es el momento adecuado para migrar. Para ello, puedo recomendarte Ubuntu Desktop. Algo importante, siempre descargar e instalar una versión LTS (Long-term support).
