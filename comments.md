@@ -4,8 +4,10 @@
 
 ## Comentarios de estudiantes:
 
+Aprendiendo pull request.
 
 
 
 
-Comentario de Hector
+
+
