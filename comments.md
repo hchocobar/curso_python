@@ -7,6 +7,8 @@ Aprendiendo pull request.
 
 soy carlos Esta es mi actualizacion
 
+Hola clase! Hola Hector ! 
+
 Ary Alexandre: Comment
 
 Comentario de Pedro 🫡
