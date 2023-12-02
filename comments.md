@@ -5,7 +5,10 @@
 ## Comentarios de estudiantes:
 
 
+Comentario de Pedro 🫡
 
 
 
-Comentario de Hector
+
+
+
