@@ -5,7 +5,7 @@
 ## Comentarios de estudiantes:
 
 
-Hola clase! 
+Hola clase! Hola Hector
 
 
 Comentario de Hector
