@@ -5,6 +5,8 @@ Esta es mi actualizacion
 
 ## Comentarios de estudiantes:
 
+Aprendiendo pull request.
+
 Ary Alexandre: Comment
 
 Comentario de Pedro 🫡
