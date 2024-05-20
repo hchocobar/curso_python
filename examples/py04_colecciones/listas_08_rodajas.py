@@ -1,6 +1,6 @@
 # Slicing operator
 # Vea también cadenas_07_rodajas.py
-# Sintaxis: list[position_start:position_end_less_one]
+# Sintaxis: list[position_start:position_end_less_one:step]
 
 # Copiando toda la lista
 lista1 = [1]
