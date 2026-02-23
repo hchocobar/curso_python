@@ -7,7 +7,7 @@ mi_diccionario = {'nombre': 'Jane Doe',
                   'niveles': ['básico', 'intermedio']}
 
 # Prueba si "nombre" está en mi_diccionario
-if "nombre" in mi_diccionario:
+if "universidad" in mi_diccionario:
     print("SI")
 else:
     print("NO")

@@ -7,7 +7,7 @@ Documentación oficial: https://www.python.org/
 Operadores
   - Asignación: =
   - Matemáticos: + - * / % //
-  - Relacionales: == !=  > < >= <=
+  - Relacionales: == != > < >= <=
   - Lógicos: and or not
   - String: + (concatenación) * (repetición)
 

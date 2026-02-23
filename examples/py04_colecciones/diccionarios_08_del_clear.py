@@ -15,6 +15,6 @@ print(mi_diccionario)  # Salida: {'nombre': 'Jane Doe', 'curso': 'Curso de Pytho
 mi_diccionario.clear()  # Elimina todos los elementos
 print(len(mi_diccionario))  # Salida: 0
 print(mi_diccionario)  # Salida: {}
-
+#
 del mi_diccionario  # elimina el diccionario
 print(mi_diccionario)  # Salida: NameError: name 'mi_diccionario' is not defined

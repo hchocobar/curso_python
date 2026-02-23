@@ -1,6 +1,6 @@
 # Slicing operator
 # Rodajas, rebanadas, slicing
-# Sintaxis: cadena[position_start:position_end_less_one:step]
+# Sintaxis: cadena[position_start : position_end_less_one : step]
 cadena = "01234567890"
 #           987654321
 # cadena = "012345678901234567890"

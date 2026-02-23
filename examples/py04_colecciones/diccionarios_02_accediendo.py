@@ -10,4 +10,6 @@ mi_diccionario = {'nombre': 'Jane Doe',
 print(mi_diccionario["nombre"])  # Salida: 'Jane Doe'
 
 # 2. Utilizando el método get()
-print(mi_diccionario.get("curso"))  # Salida: 'Curso de Python'
+result = mi_diccionario.get("fecha", 'La fecha de hoy')
+
+print(result)  # Salida: 'Curso de Python'

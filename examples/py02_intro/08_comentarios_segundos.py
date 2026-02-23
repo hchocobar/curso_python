@@ -1,4 +1,6 @@
+# Comentario de línea
 # Este programa calcula los segundos en cierto número de horas determinadas
+days = 2  # Comentario en línea
 horas = 2  # Número de horas
 segundos_hora = 3600  # Número de segundos en una hora
 
