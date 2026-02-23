@@ -6,8 +6,19 @@ mi_diccionario = {'nombre': 'Jane Doe',
                              'base_de_datos': False},
                   'niveles': ['básico', 'intermedio']}
 
-for item in mi_diccionario:
-    print(item)
+
+for columnas, value in mi_diccionario.items():
+    if columnas == 'edad':
+        print('La edad es:', value, 'años')
+    elif columnas == 'skills':
+        print('Este pibe es bueno en:', value)
+    else:
+        print(columnas, value)
+    print()
+
+hola = 'texto'
+# for clave, valor in mi_diccionario.items():
+#     print(valor)
 
 # Salida:
 """

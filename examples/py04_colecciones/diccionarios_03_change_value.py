@@ -10,5 +10,8 @@ print(mi_diccionario["name"])
 
 mi_diccionario["name"] = "Jane Doe"
 item = mi_diccionario["name"]  # Salida: Jane Doe
-print(item)
+print(mi_diccionario["name"])
+print(mi_diccionario)
+
+mi_diccionario['universidad'] = 'UCU'
 print(mi_diccionario)

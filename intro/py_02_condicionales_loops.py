@@ -1,7 +1,7 @@
 """
 Condicionales:
  - Estructura if-elif-else
- - Operadores lógicos: and  or  not
+ - Operadores lógicos: and or not
 
 Loops:
  - while

@@ -12,5 +12,7 @@ else:  # Falso
     print('Muestra 4')
     print(numero * 40)
 
-if 1000 < numero < 2000:
-    pass  # No ejecuta nada, pero es una palabra clave de python
+
+print('Fin del programa')
+# if 1000 < numero < 2000:
+#     pass  # No ejecuta nada, pero es una palabra clave de python

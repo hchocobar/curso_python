@@ -9,12 +9,12 @@ traba_lengua = 'rueda rueda la rueda del Ferrocarril'
 digitos_trab = '012345678901234567890123456789012345'
 pregunta = "¿Dónde está la gente?"
 
-# método.index -
-# Busca en la secuencia desde el principio para encontrar el primer elemento que coincide con su argumento
-print(alfabeto.index("i"))
-print(alfabeto.index("ijk"))
-# print(alfabeto.index("Z"))  # ValueError: substring not found
-print(traba_lengua.index('del'))
+# # método.index -
+# # Busca en la secuencia desde el principio para encontrar el primer elemento que coincide con su argumento
+# print(alfabeto.index("i"))
+# print(alfabeto.index("ijk"))
+# # print(alfabeto.index("Z"))  # ValueError: substring not found
+# print(traba_lengua.index('del'))
 
 # Otros métodos
 print(traba_lengua.count('rueda'))
@@ -30,11 +30,12 @@ print(alfabeto.endswith("xyz"))
 print(alfabeto.startswith("abc"))
 
 # Demostración del método split()
+traba_lengua = 'rueda rueda la rueda, del Ferrocarril'
 lista_palabras = traba_lengua.split(' ')
 print(type(lista_palabras))
 print(len(lista_palabras))
 print(lista_palabras)
-print(lista_palabras[5])
+print(lista_palabras[1])
 email = 'hector@gmail.com'
 list_email = email.split('@')
 print(list_email)
@@ -60,7 +61,7 @@ print(digitos.isdigit())
 # Demostración del método join()
 # Une las cadenas del argumento insertando la cadena que lo invoca entre cada cadena del argumento
 # El argumento debe ser una lista de cadenas (caso contrario da error)
-print(",".join(["alpha", "beta", "delta", "gama"]))
+print(" - ".join(["alpha", "beta", "delta", "gama"]))
 cadena1 = " letra griega.\n"
 print(cadena1.join(["alpha", "beta", "delta", "gama", ""]))
 
