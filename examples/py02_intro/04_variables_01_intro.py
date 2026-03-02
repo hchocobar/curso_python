@@ -15,4 +15,3 @@ mi_apellido = "Chocobar Torrejón"
 
 # Tres parámetros: string, variable de texto, variable de texto.
 print('Mi nombre:', mi_nombre, mi_apellido, 28 * 2 , 'ingreso semanal:', ingreso_semanal, egreso_semanal, semanas_anuales)
-print(f'Mi nombre es: {mi_nombre} {mi_apellido} {28*2}')
