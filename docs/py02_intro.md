@@ -144,6 +144,12 @@ Entre los operadores aritméticos que Python utiliza, podemos encontrar los sigu
 |    //    | División entera | a = 12.5 // 2 | a es igual a la división entera de 12.5 dividido 2 | a es 6.0  |
 |    %     | Módulo          | a = 27 % 4    | a es igual al módulo de 27 dividido 4              | a es 3    |
 
+> División vs. División entera
+> 
+> El operador `/` realiza una división real y siempre devuelve un valor de punto flotante, incluso si la división es exacta.
+>
+> El operador `//` realiza una división entera y devuelve el entero que sea menor o igual que el resultado de la división.
+
 ### Orden de las Operaciones. El uso de los paréntesis
 
 En los lenguajes de programación se utilizan los paréntesis para controlar lo que se conoce como el “Orden de las Operaciones”.
