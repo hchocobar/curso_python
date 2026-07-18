@@ -8,6 +8,10 @@
   * [Python](#python)
   * [PyCharm](#pycharm)
 * [Intérprete de Python](#intérprete-de-python)
+* [Jupyter Notebook](#jupyter-notebook)
+  * [Scripting (.py) vs Jupyter Notebook (.ipynb)](#scripting-py-vs-jupyter-notebook-ipynb)
+  * [Celdas de código y celdas Markdown](#celdas-de-código-y-celdas-markdown)
+  * [Markdown](#markdown)
 * [PEPs - Python Enhancement Proposals](#peps---python-enhancement-proposals)
   * [PEP 8 - Style Guide for Python Code](#pep-8---style-guide-for-python-code)
     * [PEP 8: variables](#pep-8-variables)
@@ -81,6 +85,142 @@ Type "help", "copyright", "credits" or "license" for more information.
 Esto nos permite empezar a trabajar (`>>>` es el prompt del intérprete). 
 
 Para salir del intérprete interactivo tenemos que pulsar `Ctrl+D`.
+
+# Jupyter Notebook
+
+**Tabla de Contenidos**
+
+<!-- TOC -->
+* [Jupyter Notebook](#jupyter-notebook)
+  * [Scripting (.py) vs Jupyter Notebook (.ipynb)](#scripting-py-vs-jupyter-notebook-ipynb)
+  * [Celdas de código y celdas Markdown](#celdas-de-código-y-celdas-markdown)
+  * [Markdown](#markdown)
+<!-- TOC -->
+
+[Jupyter Notebook](https://jupyter.org/) es una aplicación web de código abierto que permite crear y compartir documentos que contienen código vivo, ecuaciones, visualizaciones y texto narrativo.
+
+Es una herramienta muy utilizada en:
+
+- **Ciencia de datos** — análisis exploratorio, visualizaciones
+- **Machine Learning** — prototipado rápido de modelos
+- **Educación** — combinar explicaciones con ejemplos ejecutables
+- **Documentación técnica** — tutoriales interactivos
+
+Su uso se ha extendido tanto que hoy es difícil pensar en el ecosistema Python sin ella.
+
+## Scripting (.py) vs Jupyter Notebook (.ipynb)
+
+| Característica | Script `.py` | Notebook `.ipynb` |
+|---|---|---|
+| **Formato** | Archivo de texto plano | Archivo JSON con celdas |
+| **Ejecución** | Secuencial, de principio a fin | Celda por celda, orden flexible |
+| **Estado** | Cada ejecución comienza desde cero | Mantiene el estado entre celdas |
+| **Visualización** | Solo texto/salida de consola | Gráficos, tablas, imágenes embebidas |
+| **Narrativa** | Solo comentarios (`#`) | Celdas Markdown con formato rico |
+| **Depuración** | Mejor con debuggers (PyCharm, pdb) | Más limitado, celdas largas difíciles |
+| **Producción** | Ideal (módulos, paquetes, scripts) | No recomendado (código final) |
+| **Exploración** | Más lento (hay que re-ejecutar todo) | Ideal (pruebas rápidas, iterativo) |
+
+**¿Cuándo usar cada uno?**
+
+- Usa **`.py`** para: código de producción, módulos reutilizables, scripts automatizados, proyectos grandes.
+- Usa **`.ipynb`** para: explorar datos, prototipar, enseñar, documentar con ejemplos vivos, hacer análisis.
+
+## Celdas de código y celdas Markdown
+
+Un notebook está compuesto por **celdas** que pueden ser de dos tipos principales:
+
+### Celdas de código
+
+Contienen código Python (u otros lenguajes soportados) que se ejecuta en el kernel. Al ejecutar una celda:
+
+1. El código se envía al kernel para ser ejecutado.
+2. El resultado (output) se muestra debajo de la celda.
+3. El estado de las variables **persiste** entre celdas.
+
+⚠️ **Error común de principiantes:** En las celdas de código de Jupyter **no es necesario** usar `print()` para ver el valor de una expresión. La última expresión de una celda se muestra automáticamente:
+
+```python
+# En un script .py harías:
+print(mensaje)
+
+# En una celda de Jupyter basta con escribir:
+mensaje
+```
+
+Ejemplo de celda de código:
+
+```python
+# Primera celda
+mensaje = "Hola, Jupyter!"
+mensaje
+```
+
+```
+'Hola, Jupyter!'
+```
+
+```python
+# Segunda celda — la variable mensaje aún existe
+mensaje.upper()
+```
+
+```
+'HOLA, JUPYTER!'
+```
+
+Usa `print()` solo cuando necesites controlar el formato de salida o mostrar múltiples valores en una misma celda.
+
+### Celdas Markdown
+
+Contienen texto formateado con **Markdown**, que se renderiza como HTML enriquecido al ejecutar la celda. Permiten:
+
+- Títulos y subtítulos
+- Listas ordenadas y desordenadas
+- Negrita, cursiva, código en línea
+- Enlaces, imágenes, tablas
+- Ecuaciones matemáticas (LaTeX)
+
+```markdown
+# Título nivel 1
+## Título nivel 2
+
+**Texto en negrita** y *texto en cursiva*.
+
+- Elemento de lista
+- Otro elemento
+
+[Enlace a Python](https://www.python.org/)
+```
+
+## Markdown
+
+[Markdown](https://www.markdownguide.org/basic-syntax/) es un lenguaje de marcado ligero creado por John Gruber en 2004. Permite escribir contenido formateado usando texto plano, que luego se convierte a HTML.
+
+Es el estándar de facto para:
+
+- **Documentación técnica** (README.md, docs)
+- **Plataformas de desarrollo** (GitHub, GitLab)
+- **Notebooks** (Jupyter, Colab, VS Code)
+- **Foros** (Reddit, Discord, Stack Overflow)
+- **Esta misma página** que estás leyendo
+
+### Sintaxis básica
+
+| Elemento | Sintaxis | Resultado |
+|---|---|---|
+| Título | `# Texto` | **Texto** (tamaño grande) |
+| Negrita | `**texto**` | **texto** |
+| Cursiva | `*texto*` | *texto* |
+| Enlace | `[texto](url)` | [texto](url) |
+| Imagen | `![alt](url)` | Imagen incrustada |
+| Código | `` `código` `` | `código` |
+| Lista | `- item` | • item |
+| Cita | `> texto` | Texto citado |
+
+Para aprender Markdown a fondo, visita la guía oficial:
+
+👉 [Markdown Guide — Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 
 # PEPs - Python Enhancement Proposals
 
