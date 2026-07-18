@@ -169,8 +169,6 @@ Contienen texto formateado con **Markdown**, que se renderiza como HTML enriquec
 - Enlaces, imágenes, tablas
 - Ecuaciones matemáticas (LaTeX)
 
-⚠️ **Error común de principiantes:** En una celda Markdown **nunca** debes usar `print()`. Las celdas Markdown solo contienen texto formateado, no código. Si pones `print("Hola")` en una celda Markdown, se mostrará como texto literal, no se ejecutará. Para ejecutar código usa siempre una **celda de código**.
-
 ```markdown
 # Título nivel 1
 ## Título nivel 2
