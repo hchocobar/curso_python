@@ -138,26 +138,38 @@ Contienen código Python (u otros lenguajes soportados) que se ejecuta en el ker
 2. El resultado (output) se muestra debajo de la celda.
 3. El estado de las variables **persiste** entre celdas.
 
+⚠️ **Error común de principiantes:** En las celdas de código de Jupyter **no es necesario** usar `print()` para ver el valor de una expresión. La última expresión de una celda se muestra automáticamente:
+
+```python
+# En un script .py harías:
+print(mensaje)
+
+# En una celda de Jupyter basta con escribir:
+mensaje
+```
+
 Ejemplo de celda de código:
 
 ```python
 # Primera celda
 mensaje = "Hola, Jupyter!"
-print(mensaje)
+mensaje
 ```
 
 ```
-Hola, Jupyter!
+'Hola, Jupyter!'
 ```
 
 ```python
 # Segunda celda — la variable mensaje aún existe
-print(mensaje.upper())
+mensaje.upper()
 ```
 
 ```
-HOLA, JUPYTER!
+'HOLA, JUPYTER!'
 ```
+
+Usa `print()` solo cuando necesites controlar el formato de salida o mostrar múltiples valores en una misma celda.
 
 ### Celdas Markdown
 
